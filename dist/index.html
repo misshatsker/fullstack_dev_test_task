@@ -146,18 +146,18 @@
                 <p class="text-body-text color-gray-600">contact@company.com</p>
               </div>
               <div class="col-lg-8">
-                <div class="row">
+                <form class="row" action="https://api.byteplex.info/api/test/contact/" method="POST">
                   <div class="col-lg-12">
-                    <div class="form-group"><input class="form-control" value="" placeholder="Name"></div>
+                    <div class="form-group"><input class="form-control" name="name" value="" placeholder="Name"></div>
                   </div>
                   <div class="col-lg-12">
-                    <div class="form-group"><input class="form-control" value="" placeholder="Email"></div>
+                    <div class="form-group"><input class="form-control" name="email" value="" placeholder="Email"></div>
                   </div>
                   <div class="col-lg-12">
-                    <div class="form-group"><textarea class="form-control" placeholder="Message"></textarea></div>
+                    <div class="form-group"><textarea class="form-control" name="message" placeholder="Message"></textarea></div>
                   </div>
                   <div class="col-lg-12 mt-15"><button class="btn btn-black icon-arrow-right-white mr-40 mb-20" type="submit">Send Message</button><br class="d-lg-none d-block"><span class="text-body-text-md color-gray-500 mb-20">By clicking contact us button, you agree our terms and policy,</span></div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
