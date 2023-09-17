@@ -18,16 +18,16 @@ section.section-box.bottom-section
           p.text-body-text.color-gray-600 (239) 555-0108
           p.text-body-text.color-gray-600 contact@company.com
         .col-lg-8
-          .row
+          form.row(action="https://api.byteplex.info/api/test/contact/" method="POST")
             .col-lg-12
               .form-group
-                input.form-control(type='text', value='', placeholder='Name')
+                input.form-control(name='name' type='text', value='', placeholder='Name')
             .col-lg-12
               .form-group
-                input.form-control(type='text', value='', placeholder='Email')
+                input.form-control(name='email' type='text', value='', placeholder='Email')
             .col-lg-12
               .form-group
-                textarea.form-control(placeholder='Message')
+                textarea.form-control(name='message' placeholder='Message')
             .col-lg-12.mt-15
               button.btn.btn-black.icon-arrow-right-white.mr-40.mb-20(type='submit') Send Message
               br.d-lg-none.d-block
