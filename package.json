@@ -1,11 +1,14 @@
 {
   "name": "test_task",
   "version": "4.0",
+  "homepage": "https://misshatsker.github.io/fullstack_dev_test_task",
   "description": "test_task",
   "main": "src/app.js",
   "repository": "",
   "license": "GPL",
   "scripts": {
+    "predeploy": "npm run prod",
+    "deploy": "gh-pages -d prod",
     "build": "rimraf dist && webpack --env mode=development --config ./build/webpack.config.js --progress",
     "dev": "webpack serve --env mode=development --config ./build/webpack.config.js --progress",
     "prod": "rimraf dist && webpack --env mode=production --config ./build/webpack.config.js --progress"
@@ -26,6 +29,7 @@
     "eslint": "^7.27.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^6.0.0",
